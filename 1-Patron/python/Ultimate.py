@@ -1,9 +1,9 @@
 class Ultimate(object):
 
     def __init__(self, nombre, danio, nivel):
-        self.nombre = nombre
-        self.danio = danio
-        self.nivel = nivel
+        self.__nombre = nombre
+        self.__danio = danio
+        self.__nivel = nivel
 
     def incNivel(self, incremento):
-        self.nivel += incremento
+        self.__nivel += incremento

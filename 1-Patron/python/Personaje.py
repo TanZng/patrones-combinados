@@ -1,10 +1,13 @@
 class Personaje(object):
 
     def __init__(self, ultimate, arma, armadura, experiencia):
-        self.ultimate = ultimate
-        self.arma = arma
-        self.armadura = armadura
-        self.experiencia = experiencia
+        self.__ultimate = ultimate
+        self.__arma = arma
+        self.__armadura = armadura
+        self.__experiencia = experiencia
 
     def verStats(self):
-        pass
+        return f"Ultimate:{self.__ultimate}\n \
+                Arma: {self.__arma}\n \
+                Armadura: {self.__armadura}\n \
+                Experiencia: {self.__experiencia}"

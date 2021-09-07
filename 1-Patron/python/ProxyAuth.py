@@ -1,4 +1,5 @@
-class ProxyAuth:
+import IAuth
+class ProxyAuth(IAuth):
     def __init__(self, account):
         self.account = account
 

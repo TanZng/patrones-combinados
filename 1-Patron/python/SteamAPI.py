@@ -1,6 +1,7 @@
-class SteamAPI():
+import IAuth
+class SteamAPI(IAuth):
     def __init__(self, account):
         self.account = account
 
-    def authAccess(self):
-        pass
+    def solicitarAuth(self):
+        return bool(self.account)

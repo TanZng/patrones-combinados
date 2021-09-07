@@ -1,6 +1,6 @@
 class GestorDePersonaje:
     def __init__(self, personaje):
-        self._personaje = personaje
+        self.__personaje = personaje
 
     def mejorarUltimate(self):
         pass
