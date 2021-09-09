@@ -1,3 +1,4 @@
+import Ultimate
 class GestorDeUltimate():
     def __init__(self, ultimate):
         self.__ultimate = ultimate
@@ -9,3 +10,5 @@ class GestorDeUltimate():
             text = 'Nuevo nivel alcanzado'
         return text
         
+    def generarUltimate():
+        return Ultimate("Basic Ulti", 10, 1)
