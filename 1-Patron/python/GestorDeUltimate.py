@@ -11,4 +11,4 @@ class GestorDeUltimate():
         return text
         
     def generarUltimate():
-        return Ultimate("Basic Ulti", 10, 1)
+        return Ultimate("Basic", 10, 1)
