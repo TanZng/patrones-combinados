@@ -4,11 +4,7 @@ class GestorDeUltimate():
         self.__ultimate = ultimate
 
     def subirDeNivel(self, incremento):
-        text = 'No se pudo subir de nivel la ultimate'
-        exito = self.__ultimate.incNivel(incremento)
-        if (exito):
-            text = 'Nuevo nivel alcanzado'
-        return text
+        return self.__ultimate.incNivel(incremento)
         
     def generarUltimate():
         return Ultimate("Basic", 10, 1)

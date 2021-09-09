@@ -6,10 +6,11 @@ class GestorDeArma():
 
     def repararArma(self, incremento):
         self.__arma.duracion += incremento
+        return self.__arma.duracion
     
     def mejorarArma(self, incremento):
-        self.__arma.incNivel()
-        return self.__arma.aumentarDaño(incremento)
+        self.__arma.aumentarDaño(incremento)
+        return self.__arma.incNivel()
 
     def cambiarHechizo(self, nombre_hechizo):
         return self.__arma.setHechizo(nombre_hechizo)

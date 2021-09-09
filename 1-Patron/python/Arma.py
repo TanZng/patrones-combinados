@@ -49,6 +49,7 @@ class Arma(object):
 
     def aumentarDaño(self, aumento):
         self.__danio_recibido += aumento
+        return self.__danio_recibido
 
     def setHechizo(self, hechizo):
         self.__hechizo = hechizo

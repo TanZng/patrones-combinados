@@ -7,3 +7,4 @@ class Ultimate(object):
 
     def incNivel(self, incremento):
         self.__nivel += incremento
+        return self.__nivel

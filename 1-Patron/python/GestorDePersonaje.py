@@ -7,7 +7,7 @@ class GestorDePersonaje:
 
     def mejorarUltimate(self, incremento):
         gestor_ultimate = GestorDeUltimate(self.__personaje.ultimate)
-        gestor_ultimate.subirDeNivel(incremento)
+        return gestor_ultimate.subirDeNivel(incremento)
 
     def mejorarUltimate(self):
         pass
@@ -15,8 +15,9 @@ class GestorDePersonaje:
     def mejorarArmadura(self):
         pass
 
-    def mejorarArma(self):
-        pass
+    def mejorarArma(self, incremento):
+        gestor_arma = GestorDeArma(self.__personaje.arma)
+        return gestor_arma.mejorarArma(incremento)
 
     def verStats(self):
         pass
