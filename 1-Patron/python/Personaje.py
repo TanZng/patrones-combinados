@@ -1,6 +1,3 @@
-from _typeshed import Self
-
-
 class Personaje(object):
 
     def __init__(self, ultimate, arma, armadura, experiencia):

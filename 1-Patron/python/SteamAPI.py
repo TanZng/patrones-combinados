@@ -4,4 +4,4 @@ class SteamAPI(IAuth):
         self.account = account
 
     def solicitarAuth(self):
-        return bool(self.account)
+        return self.account.authLogin()
