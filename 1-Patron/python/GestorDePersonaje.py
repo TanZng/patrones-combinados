@@ -1,6 +1,7 @@
 import GestorDeUltimate
 import GestorDeArma
 import GestorDeArmadura
+import GestorDeExperiencia
 import Personaje
 class GestorDePersonaje:
     def __init__(self, personaje):
@@ -28,5 +29,6 @@ class GestorDePersonaje:
         arma = gestor_arma.generarArma()
         gestor_armadura = GestorDeArmadura(None)
         armadura = gestor_armadura.generarArmadura()
-        # gestor_experiencia
+        gestor_experiencia = GestorDeExperiencia(None)
+        experiencia = gestor_experiencia.generarExperiencia()
         self.__personaje = Personaje(ultimate, arma, armadura, experiencia)

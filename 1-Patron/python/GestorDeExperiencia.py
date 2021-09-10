@@ -1,11 +1,11 @@
-import Arma
+import Experiencia
 
 class GestorDeExperiencia():
     def __init__(self, experiencia):
         self.__experiencia = experiencia
 
     def subirExperiencia(self, incremento):
-        pass
+        return self.__experiencia.incTotal(incremento)
         
     def generarExperiencia(self):
-        pass
+        return Experiencia()
