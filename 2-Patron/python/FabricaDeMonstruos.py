@@ -8,11 +8,14 @@ import GestorDeResistencia
 
 class FabricaDeMonstruos(FabricaDeCriaturas):
     def crearGrande(self, nombre):
+        resistencia = GestorDeResistencia.generarResistencia()
         habilidad = GestorDeHabilidades().generarHabilidad()
         ultimate = GestorDeUltimate().generarUltimate()
-        resistencia = GestorDeResistencia.generarResistencia()
         multiplicador_daño = 0.3
         return MonstruoColosal(nombre, 100, 1000, 1, habilidad, ultimate, resistencia, multiplicador_daño)
 
     def crearPequeña(self, nombre):
-        return MonstruoComun(nombre, 10, 100, 1)
+        resistencia = GestorDeResistencia.generarResistencia()
+        habilidad = GestorDeHabilidades().generarHabilidad()
+        ultimate = GestorDeUltimate().generarUltimate()
+        return MonstruoComun(nombre, 100, 1000, 1, habilidad, ultimate, resistencia)
