@@ -21,3 +21,6 @@ class Tesoro():
 
     def incBonus(self):
         self.__bonus += 1.01
+
+    def getMonedas(self):
+        return int(self.__bonus * self.__monedas)
