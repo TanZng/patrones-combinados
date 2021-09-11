@@ -48,8 +48,8 @@ class Criatura(abc.ABC):
 
     @abc.abstractclassmethod
     def verStats(self):
-        return f"Nombre: {self.__nombre} \
-                 Defensa: {self.__defensa} \
-                 Ataque: {self.__ataque} \
-                 Nivel: {self.__nivel}"
+        return f"Nombre: {self.__nombre}\n\
+                 Defensa: {self.__defensa}\n\
+                 Ataque: {self.__ataque}\n\
+                 Nivel: {self.__nivel}\n"
 
