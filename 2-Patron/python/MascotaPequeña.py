@@ -1,5 +1,7 @@
 from _typeshed import Self
 import Criatura
+
+
 class MascotaPequeña(Criatura):
     def __init__(self, nombre, defensa, ataque, nivel):
         super().__init__(nombre, defensa, ataque, nivel)
@@ -24,7 +26,7 @@ class MascotaPequeña(Criatura):
     def decSalud(self, decremento):
         self.__salud -= decremento // self.__defensa
         return self.__salud
-    
+
     def incNivel(self):
         self.__nivel += 5
         return self.__nivel

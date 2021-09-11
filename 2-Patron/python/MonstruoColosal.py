@@ -1,13 +1,13 @@
-from typing import Hashable
 import Criatura
 
 
-class MonstruoComun(Criatura):
-    def __init__(self, nombre, defensa, ataque, nivel, habilidad, ultimate, resistencia):
+class MonstruoColosal(Criatura):
+    def __init__(self, nombre, defensa, ataque, nivel, habilidad, ultimate, resistencia, multiplicador_daño):
         super().__init__(nombre, defensa, ataque, nivel)
         self.__habilidad = habilidad
         self.__ultimate = ultimate
         self.__resistencia = resistencia
+        self.__multiplicador_daño = multiplicador_daño
 
     @property
     def habilidad(self):
@@ -33,12 +33,27 @@ class MonstruoComun(Criatura):
     def resistencia(self, new):
         self.__resistencia = new
 
-    def reducirResistencia(self):
-        self.__resistencia.reducir()
-        return self.__resistencia.valor()
+    @property
+    def multiplicador_daño(self):
+        return self.__multiplicador_daño
+
+    @multiplicador_daño.setter
+    def multiplicador_daño(self, new):
+        self.__multiplicador_daño = new
+
+    def usarUltimate(self):
+        return self.__ultimate
+
+    def aumentarResistencia(self):
+        self.__resistencia.aumentar()
+        return self.__resistencia
+
+    def atacar(self):
+        return self.__ataque * self.__multiplicador_daño
 
     def decSalud(self, decremento):
-        self.__salud -= decremento // self.__resistencia.valor()
+        self.__salud -= decremento // (self.__resistencia.valor()
+                                       * self.__defensa)
 
     def incNivel(self):
         self.__nivel += 2
@@ -47,4 +62,5 @@ class MonstruoComun(Criatura):
         return f"{super().verStats()}\n\
                  Habilidad: {self.__sígueme}\n \
                  Ultimate: {self.__ultimate}\n \
-                 Resistencia: {self.__resistencia}\n"
+                 Resistencia: {self.__resistencia}\n \
+                 Multiplicar Daño: {self.__multiplicador_daño}"

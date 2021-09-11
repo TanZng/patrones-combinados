@@ -1,4 +1,6 @@
 import Criatura
+
+
 class MascotaGrande(Criatura):
     def __init__(self, nombre, defensa, ataque, nivel):
         super().__init__(nombre, defensa, ataque, nivel)
@@ -33,10 +35,13 @@ class MascotaGrande(Criatura):
     def usarUltimate(self):
         return self.__ultimate
 
+    def atacar(self):
+        return self.__ataque * (self.__nivel * 0.5)
+
     def decSalud(self, decremento):
         self.__salud -= decremento // self.__armadura
         return self.__salud
-    
+
     def incNivel(self):
         self.__nivel += 1
         return self.__nivel
