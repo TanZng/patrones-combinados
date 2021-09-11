@@ -21,6 +21,14 @@ class MascotaPequeña(Criatura):
         self.__sígueme = False
         return self.__sígueme
 
+    def decSalud(self, decremento):
+        self.__salud -= decremento // self.__defensa
+        return self.__salud
+    
+    def incNivel(self):
+        self.__nivel += 5
+        return self.__nivel
+
     def verStats(self):
         return f"{super().verStats()}\n\
                  Sígueme: {self.__sígueme}\n"
