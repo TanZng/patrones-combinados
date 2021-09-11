@@ -1,9 +1,9 @@
 import abc
 class FabricaDeCriaturas(abc.ABC):
     @abc.abstractclassmethod
-    def crearMascota():
+    def crearGrande():
         pass
     
     @abc.abstractclassmethod
-    def crearMonstruo():
+    def crearPequeña():
         pass
