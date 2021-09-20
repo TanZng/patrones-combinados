@@ -1,57 +1,75 @@
-<?php 
- class Cliente { 
-    private $nombre;
-    private $apellido;
-    private $edad;
-    private $correo;
-    private $contraseña;
+<?php
+class Cliente
+{
+  private $nombre;
+  private $apellido;
+  private $edad;
+  private $correo;
+  private $contrasena;
 
 
+  function __construct($nombre,$apellido,$edad,$correo,$contrasena)
+  {
+    $this->$nombre = $nombre;
+    $this->$apellido = $apellido;
+    $this->$edad = $edad;
+    $this->$correo = $correo;
+    $this->$contrasena = $contrasena;
+  }
 
-    public function __construct($nombre,$apellido,$edad,$correo,$contraseña) {
-    	$this->$nombre = $nombre;
-    	$this->$apellido = $apellido;
-    	$this->$edad = $edad;
-    	$this->$correo = $correo;
-    	$this->$contraseña = $contraseña;
-    }
+  function getNombre()
+  {
+    return $this->nombre;
+  }
 
-    public function getNombre(){
-        return $this->nombre;
-    }
+  function setNombre($nombre)
+  {
+    $this->nombre = $nombre;
+  }
 
-    public function setNombre($nombre){
-        $this->nombre = $nombre;
-    }
+  function getApellido()
+  {
+    return $this->apellido;
+  }
 
-    public function getApellido(){
-        return $this->apellido;
-    }
+  function setApellido($apellido)
+  {
+    $this->apellido = $apellido;
+  }
 
-    public function setApellido($apellido){
-        $this->apellido = $apellido;
-    }
-    public function getEdad(){
-        return $this->edad;
-    }
+  function getEdad()
+  {
+    return $this->edad;
+  }
 
-    public function setEdad($edad){
-        $this->edad = $edad;
-    }
-    public function getCorreo(){
-        return $this->correo;
-    }
+  function setEdad($edad)
+  {
+    $this->edad = $edad;
+  }
 
-    public function setNombre($correo){
-        $this->correo = $correo;
-    }
+  function getCorreo()
+  {
+    return $this->correo;
+  }
 
-    public function getContra(){
-        return $this->contraseña;
-    }
+  function setNombre($correo)
+  {
+    $this->correo = $correo;
+  }
 
-    public function setContra($contraseña){
-        $this->contraseña = $contraseña;
-    }
- }
+  function getContra()
+  {
+    return $this->contraseña;
+  }
+
+  function setContra($contraseña)
+  {
+    $this->contraseña = $contraseña;
+  }
+
+  function autenticar()
+  {
+    //
+  }
+}
 ?>

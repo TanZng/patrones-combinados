@@ -1,10 +1,10 @@
-<?php 
- class Cliente { 
-    private $nombre;
-    private $apellido;
-    private $edad;
-    private $correo;
-    private $contraseña;
+<?php
+class Cliente {
+  private $nombre;
+  private $apellido;
+  private $edad;
+  private $correo;
+  private $contraseña;
 
 
 
