@@ -7,7 +7,6 @@ class Cliente
   private $correo;
   private $contrasena;
 
-
   function __construct($nombre,$apellido,$edad,$correo,$contrasena)
   {
     $this->$nombre = $nombre;

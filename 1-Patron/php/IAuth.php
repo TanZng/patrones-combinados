@@ -1,6 +1,6 @@
 <?php
-class IAuth
+interface IAuth
 {
-  
+  function solicitarAuth();
 }
 ?>
