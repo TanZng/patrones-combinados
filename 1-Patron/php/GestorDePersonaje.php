@@ -31,9 +31,9 @@ class GestorDePersonaje
     return $this->personaje->verStats();
   }
 
-  function generarPersonaje()
+  function generarPersonaje($ultimate, $arma, $armadura, $experiencia)
   {
-
+    $this->personaje= new Personaje($ultimate, $arma, $armadura, $experiencia)
   }
 }
 ?>
