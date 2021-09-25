@@ -1,6 +1,7 @@
 <?php
-class ISkinLocal
+interface ISkinLocal
 {
-
+  function cargarSkinLocal($ruta);
+  function mostrarSkin();
 }
 ?>
