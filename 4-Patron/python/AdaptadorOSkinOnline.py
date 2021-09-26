@@ -1,5 +1,6 @@
 import ISkinLocal
 import SkinOnline
+import Skin
 
 
 class AdaptadorOSkinOnline(ISkinLocal, Skin):

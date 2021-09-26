@@ -11,4 +11,4 @@ class TexturaSkin:
         self.__rutaTextura = new
 
     def mostrarTextura(self):
-        print(f"<img src='{rutaTextura}' alt='skin'>")
+        print(f"<img src='{self.__rutaTextura}' alt='skin'>")
