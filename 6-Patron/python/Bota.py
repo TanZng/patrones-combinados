@@ -13,3 +13,6 @@ class Bota(Botas):
     @velocidad.setter
     def velocidad(self, new):
         self.__velocidad = new
+
+    def verBotas(self):
+        print(f"Velocidad: {self.__velocidad}")

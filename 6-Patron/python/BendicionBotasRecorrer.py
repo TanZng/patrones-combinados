@@ -16,3 +16,6 @@ class BendicionBotasRecorrer(Botas):
 
     def ActivarHabilidadFuria(self):
         self.__habilidad = 'Furia divina'
+
+    def verBotas(self):
+        print(f"Habilidad: {self.__habilidad} ")

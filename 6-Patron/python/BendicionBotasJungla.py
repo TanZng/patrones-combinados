@@ -16,3 +16,6 @@ class BendicionBotasJungla(Botas):
 
     def activarHabilidadRetribucion(self):
         self.__habilidad = 'Retribucion del angel caido'
+
+    def verBotas(self):
+        print(f"Habilidad: {self.__habilidad} ")
