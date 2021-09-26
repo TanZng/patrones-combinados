@@ -26,12 +26,8 @@ class Particulas{
 
 	public function cargarParticulas(){
 		$ruta = 'C:\CyberMagik2069\Particles\Particulas.txt';
-		if(readfile($ruta) == null){
-			return false;
-		}else{
-			return true;
-		}
-
+		echo 'Cargando archivo...';
+		echo $ruta . ' detectada.';
 	}
 }
 ?>

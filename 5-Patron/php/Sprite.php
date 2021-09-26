@@ -24,14 +24,10 @@ class Sprite{
 		$this->archivo = $archivo;
 	}
 
-	public function cargarSprite(){
+	public function cargarSprite($file){
 		$ruta = 'C:\CyberMagik2069\Sprites\Sprite.txt';
-		if(readfile($ruta) == null){
-			return false;
-		}else{
-			return true;
-		}
-
+		echo 'Cargando archivo...';
+		echo $ruta . ' detectada.';
 	}
 }
 ?>

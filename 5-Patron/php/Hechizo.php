@@ -95,10 +95,13 @@ class Hechizo extends HabilidadMagica{
   	public function crearLibro($tipoLibro,$duracion,$texto){
 		if ($tipoLibro == 1) {
         	$this->libro = new LibroFortaleza($duracion,$texto);
+        	return $this->libro;
     	} elseif ($tipoLibro == 2) {
         	$this->libro = new LibroVentisca($duracion,$texto);
+        	return $this->libro;
     	}elseif ($tipoLibro == 3) {
     		$this->libro = new LibroLluviaEspadas($duracion,$texto);
+    		return $this->libro;
     	}else{
     		return null;
     	}

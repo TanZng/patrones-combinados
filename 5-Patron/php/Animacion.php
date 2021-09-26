@@ -26,12 +26,8 @@ class Animacion{
 
 	public function cargarAnimacion(){
 		$ruta = 'C:\CyberMagik2069\Animations\Animacion.txt';
-		if(readfile($ruta) == null){
-			return false;
-		}else{
-			return true;
-		}
-
+		echo 'Cargando archivo...';
+		echo $ruta . ' detectada.';
 	}
 }
 ?>
