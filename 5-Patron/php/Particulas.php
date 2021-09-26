@@ -24,7 +24,7 @@ class Particulas{
 		$this->archivo = $archivo;
 	}
 
-	public function cargarParticulas(){
+	public function cargarParticulas($file){
 		$ruta = 'C:\CyberMagik2069\Particles\Particulas.txt';
 		echo 'Cargando archivo...';
 		echo $ruta . ' detectada.';

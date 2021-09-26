@@ -24,7 +24,7 @@ class Animacion{
 		$this->archivo = $archivo;
 	}
 
-	public function cargarAnimacion(){
+	public function cargarAnimacion($file){
 		$ruta = 'C:\CyberMagik2069\Animations\Animacion.txt';
 		echo 'Cargando archivo...';
 		echo $ruta . ' detectada.';
