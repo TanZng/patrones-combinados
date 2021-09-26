@@ -1,6 +1,5 @@
 <?php
-class Libro
-{
-
+abstract class Libro{
+	abstract public function verStats();
 }
 ?>

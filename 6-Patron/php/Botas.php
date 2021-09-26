@@ -1,6 +1,6 @@
 <?php
-class Botas
-{
-
+abstract class Botas{
+	abstract public function gestionaBotas();
 }
 ?>
+

@@ -1,6 +1,6 @@
 <?php
-class FabricaBotas
-{
-
+abstract class FabricaBotas{
+	abstract public function crearBotas();
 }
 ?>
+

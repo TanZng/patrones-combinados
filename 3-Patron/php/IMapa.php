@@ -1,6 +1,4 @@
 <?php
-class IMapa
-{
-
+interface IMapa{
 }
 ?>
