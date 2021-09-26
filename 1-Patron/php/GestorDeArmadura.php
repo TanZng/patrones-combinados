@@ -10,7 +10,7 @@ class GestorDeArmadura
 
   function mejorarArmadura($mejora)
   {
-    $this->armadura->incNivel($mejora);
+    $this->armadura->setNivel($mejora);
   }
 
   function repararArmadura($reparacion)
