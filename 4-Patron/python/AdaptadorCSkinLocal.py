@@ -12,4 +12,4 @@ class AdaptadorC_SkinLocal(ISkinLocal, Skin):
         self.__tipo = 'Local'
 
     def mostrarSkin(self):
-        return f"<img src='{self.__skin}' alt='skin'>"
+        print(f"<img src='{self.__skin}' alt='skin'>")

@@ -2,7 +2,7 @@ import ISkinLocal
 import SkinOnline
 
 
-class AdaptadorC_SkinLocal(ISkinLocal, Skin):
+class AdaptadorOSkinOnline(ISkinLocal, Skin):
     def __init__(self):
         super().__init__()
         self.__skin = None

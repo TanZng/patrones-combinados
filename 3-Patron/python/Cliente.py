@@ -10,7 +10,7 @@ class Cliente():
     def nombre(self):
         return self.__nombre
 
-    @property.setter
+    @nombre.setter
     def nombre(self, new_nombre):
         self.__nombre = new_nombre
 
@@ -18,7 +18,7 @@ class Cliente():
     def apellido(self):
         return self.__apellido
 
-    @property.setter
+    @apellido.setter
     def apellido(self, new_apellido):
         self.__apellido = new_apellido
 
@@ -26,7 +26,7 @@ class Cliente():
     def edad(self):
         return self.__edad
 
-    @property.setter
+    @edad.setter
     def edad(self, new_edad):
         self.__edad = new_edad
 
@@ -34,7 +34,7 @@ class Cliente():
     def correo(self):
         return self.__correo
 
-    @property.setter
+    @correo.setter
     def correo(self, new_correo):
         self.__correo = new_correo
 
@@ -42,7 +42,7 @@ class Cliente():
     def contrasena(self):
         return self.__contrasena
 
-    @property.setter
+    @contrasena.setter
     def contrasena(self, new_contrasena):
         self.__contrasena = new_contrasena
 
