@@ -1,6 +1,6 @@
 <?php
 abstract class Botas{
-	abstract public function gestionaBotas();
+	abstract public function verBotas();
 }
 ?>
 

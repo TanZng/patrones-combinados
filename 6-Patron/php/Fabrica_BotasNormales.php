@@ -14,6 +14,7 @@ class Fabrica_BotasNormales extends FabricaBotas{
 
 	public function crearBotas(){
     	$nuevaBotaN = new Bota(100);
+    	$this->botasNormales = $nuevaBotaN;
 	}
 
 }

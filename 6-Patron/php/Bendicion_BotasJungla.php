@@ -16,12 +16,13 @@ class Bendicion_BotasJungla extends Botas{
 	}
 
 
-	public function gestionaBotas(){
-
+	public function verBotas(){
+		echo 'Velocidad: ' . $this->velocidad . 'Habilidad: ' . $this->habilidad;
 	}
 
 	public function activarHabilidadFuria(){
-		$this->habilidad = 'Furia divina';
+		$this->habilidad = 'Juramento de la jungla divina';
+		echo 'La habilidad: ' . $habilidad . ' ha sido activada.';
 	}
 
 }

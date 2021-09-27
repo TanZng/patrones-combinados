@@ -17,8 +17,8 @@ class Bota extends Botas{
 
 
 
-	public function gestionaBotas(){
-
+	public function verBotas(){
+		echo 'Velocidad: ' . $this->velocidad;
 	}
 }
 ?>
