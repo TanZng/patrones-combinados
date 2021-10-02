@@ -8,9 +8,6 @@ public class AdaptadorC_SkinLocal extends Skin implements ISkinLocal{
         this.skin = null;
     }
 
-    AdaptadorC_SkinLocal(String ruta) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
     
     @Override
     public void cargarSkinLocal(String ruta){
