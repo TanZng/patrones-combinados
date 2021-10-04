@@ -1,5 +1,5 @@
 <?php
-class MonstruoColosal
+class MonstruoColosal extends Criatura
 {
   private $habilidad;
   private $ultimate;
@@ -62,27 +62,30 @@ class MonstruoColosal
 
   function aumentarResistencia()
   {
-    return 
+    $this->resistencia++;
   }
 
   function atacar()
   {
-
+    return $this->ataque * $this->multiplicadorDano;
   }
 
-  function decSalud()
+  function decSalud($decremento)
   {
-
+    $this->salud -= $decremento / ($this->resistencia * $this->defensa);
   }
 
   function incNivel()
   {
-
+    $this->nivel += 2;
   }
 
   function verStats()
   {
-
+    return  "Habilidad: " . $this->habilidad .
+            "Ultimate: " . $this->ultimate .
+            "Resistencia: " $this->resistencia.
+            "Multiplicar Daño" $this->multiplicadorDano;
   }
 }
 ?>
