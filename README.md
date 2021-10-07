@@ -6,6 +6,12 @@
 
 ☕ Java
 
+<br/>
+
+### [📝 Documento con el Dominio del Problema](https://docs.google.com/document/d/19ER5jamZZvp4D1Z0fvUi4-2OVmv9t-I2Dg8GFlWoGUY/edit?usp=sharing)
+
+<br/>
+
 ### [🧝🏼🧙🏽‍♀️🧛🏻 Patrón combinado No. 1](https://github.com/TanZng/patrones-combinados/tree/main/1-Patron):
 - Master-Slave
 - Whole-Part
