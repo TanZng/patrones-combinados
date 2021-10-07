@@ -10,8 +10,9 @@ class AdaptadorO_SkinOnline extends Skin
 
   function cargarNuevoSkin($ruta)
   {
-    // Se debe obtener la información y la textura desde la ruta D:
-
+    $nSkin = $this->skin->getFromServer($ruta);
+    $info = $nSkin[0];
+    $txs = $nSkin[1];
     $this->skin = new SkinOnline($info, $txs)
     $tipoSkin = "Online";
   }
