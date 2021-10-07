@@ -7,4 +7,4 @@
 
 ### Secuencia
 
-![secuencia4](https://raw.githubusercontent.com/TanZng/patrones-combinados/main/4-Patron/diagramas/4DiagramaSecuencia.jpg)
+![secuencia4](https://raw.githubusercontent.com/TanZng/patrones-combinados/main/4-Patron/diagramas/4DiagramaSecuencia.drawio.png)
